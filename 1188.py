@@ -1,6 +1,6 @@
 import sys
 
-
+# 최대 공약수를 구하는 함수
 def gcd(a, b):
     while b:
         a, b = b, a % b
