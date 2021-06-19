@@ -2,21 +2,7 @@ import sys
 import math
 
 
-def isPrime(m, n):
-    arr = [True] * (m-n)
+def isPrime(n):
+    arr = [True] * n
 
-    max_div = int(math.sqrt(n))
-
-    for i in range(2, max_div+1):
-        if arr[i] == True:
-            for j in range(i+i, n, i):
-                arr[i] = False
-
-    for i in range(m, n+1):
-        if arr[i] == True:
-            return print(arr[i])
-
-
-M, N = map(int, sys.stdin.readline().split())
-
-isPrime(M, N)
+    // n의 최대 약수는 n의 제곱근 이하
