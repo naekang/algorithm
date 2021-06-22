@@ -11,7 +11,8 @@ public class Main {
         System.out.println(a * b);
         System.out.println(a / b);
         System.out.println(a % b);
-        System.out.println((double) (a / b));
+        double A = (double) a;
+        System.out.printf("%.2f", A/b);
 
     }
 }

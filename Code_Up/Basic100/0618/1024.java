@@ -6,7 +6,7 @@ public class Main {
         String word = sc.nextLine();
         char[] arrWord = word.toCharArray();
         for (int i = 0; i < arrWord.length; i++) {
-            System.out.println(arrWord[i]);
+            System.out.println("\'"+arrWord[i]+ "\'");
         }
     }
 }
