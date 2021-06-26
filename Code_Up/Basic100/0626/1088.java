@@ -3,13 +3,12 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int start = 0;
         int N = sc.nextInt();
 
-        do {
-            System.out.println(start);
-            start += 1;
-        } while (start <= N);
-
+        for (int i = 0; i <= N; i++) {
+            if (i % 3 == 0)
+                continue;
+            System.out.print(i + " ");
+        }
     }
 }

@@ -5,9 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int c = sc.nextInt();
+        int day = 1;
 
-        int result = (a > b) ? a : b;
+        while (day % a != 0 || day % b != 0 || day % c != 0) {
+            day++;
+        }
+        System.out.println(day);
 
-        System.out.println(result);
     }
 }

@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
+        int d = sc.nextInt();
+        int n = sc.nextInt();
 
-        int result = (a > b) ? a : b;
+        int result = a + d * (n - 1);
 
         System.out.println(result);
     }
