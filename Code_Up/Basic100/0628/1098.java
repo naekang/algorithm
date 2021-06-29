@@ -23,7 +23,7 @@ public class Main {
                 }
             } else if (d == 1) {
                 for (int k = 0; k < l; k++) {
-                    arr[x + j][y] = 1;
+                    arr[x + k][y] = 1;
                 }
             }
         }
