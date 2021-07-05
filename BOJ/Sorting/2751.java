@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Collection;
+import java.util.Collections;
 import java.util.ArrayList;
 
 public class Main {
@@ -15,10 +15,10 @@ public class Main {
             list.add(sc.nextInt());
         }
 
-        Collection.sort(list);
+        Collections.sort(list);
 
         for (int num : list) {
-            sb.append(num).append('/n');
+            sb.append(num).append('\n');
         }
         System.out.println(sb);
     }
