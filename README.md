@@ -9,7 +9,7 @@
 7. [이분탐색](/BOJ/binary_search)
 8. 백트래킹
 9. [분할정복](/BOJ/divide_and_conquer)
-10. 동적계획법
+10. [동적계획법](/BOJ/dynamic_programming)
 11. 최단 경로
 12. 유니온 파인드
 13. 위상 정렬
