@@ -1,13 +1,11 @@
-package com.company;
-
 import java.io.*;
 
-public class Main {
+public class boj1157 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int arr[] = new int[26];
+        int[] arr = new int[26];
         String words = br.readLine();
 
         for (int i = 0; i < words.length(); i++) {

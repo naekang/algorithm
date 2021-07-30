@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class boj1316 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Main {
         int cnt = 0;
 
         for (int i = 0; i < N; i++) {
-            if (checkWord() == true)
+            if (checkWord())
                 cnt++;
         }
         System.out.println(cnt);
@@ -23,14 +23,12 @@ public class Main {
             int target = str.charAt(i);
 
             if (first != target) {
-                if (check[target - 'a'] == false) {
+                if (!check[target - 'a']) {
                     check[target - 'a'] = true;
                     first = target;
                 } else {
                     return false;
                 }
-            } else {
-                continue;
             }
         }
         return true;
