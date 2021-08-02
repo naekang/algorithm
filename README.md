@@ -1,5 +1,6 @@
 # Algorithm Practice
 ---
+
 1. [그리디 알고리즘](/BOJ/greedy)
 2. [스택](/BOJ/stack)
 3. [큐, 덱](/BOJ/queue)
