@@ -40,7 +40,7 @@ public class boj1260 {
             int tmp = q.poll();
 
             for (int j = 1; j <= N; j++) {
-                if (graph[tmp][j] == 1 && checked[j] == false) {
+                if (graph[tmp][j] == 1 && !checked[j]) {
                     q.offer(j);
                     checked[j] = true;
                     System.out.print(j + " ");
@@ -54,7 +54,7 @@ public class boj1260 {
         System.out.print(x + " ");
 
         for (int i = 1; i <= N; i++) {
-            if (graph[x][i] == 1 && checked[i] == false) {
+            if (graph[x][i] == 1 && !checked[i]) {
                 dfs(i);
             }
         }

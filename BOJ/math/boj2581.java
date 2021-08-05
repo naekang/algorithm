@@ -19,7 +19,7 @@ public class boj2581 {
         int min = Integer.MAX_VALUE;
 
         for (int i = M; i <= N; i++) {
-            if (prime[i] == false) {
+            if (!prime[i]) {
                 sum += i;
                 if (min == Integer.MAX_VALUE) {
                     min = i;
@@ -44,7 +44,7 @@ public class boj2581 {
             if (prime[i]) {
                 continue;
             }
-            for (int j = i * i; j < prime.length; j+= i) {
+            for (int j = i * i; j < prime.length; j += i) {
                 prime[j] = true;
             }
         }

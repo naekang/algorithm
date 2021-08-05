@@ -5,8 +5,8 @@ public class boj2667 {
 
     public static int n;
     public static int apartNum = 0;
-    public static int dx[] = {0, 0, 1, -1};
-    public static int dy[] = {1, -1, 0, 0};
+    public static int dx[] = { 0, 0, 1, -1 };
+    public static int dy[] = { 1, -1, 0, 0 };
     public static int[] apart = new int[25 * 25];
     public static int[][] map = new int[25][25];
     public static boolean[][] visited = new boolean[25][25];
@@ -27,7 +27,7 @@ public class boj2667 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (map[i][j] == 1 && visited[i][j] == false) {
+                if (map[i][j] == 1 && !visited[i][j]) {
                     apartNum++;
                     dfs(i, j);
                 }
@@ -54,7 +54,7 @@ public class boj2667 {
             int ny = y + dy[i];
 
             if (nx >= 0 && nx < n && ny >= 0 && ny < n) {
-                if (map[nx][ny] == 1 && visited[nx][ny] == false) {
+                if (map[nx][ny] == 1 && !visited[nx][ny]) {
                     dfs(nx, ny);
                 }
             }
