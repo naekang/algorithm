@@ -2,7 +2,7 @@ package org.naekang;
 
 import java.util.Scanner;
 
-public class Boj1654 {
+public class Boj_1654 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

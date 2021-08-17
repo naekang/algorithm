@@ -3,7 +3,7 @@ package org.naekang;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Boj1920 {
+public class Boj_1920 {
 
     static int[] arr;
 
