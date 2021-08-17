@@ -1,7 +1,9 @@
+package org.naekang;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class boj1920 {
+public class Boj1920 {
 
     static int[] arr;
 
