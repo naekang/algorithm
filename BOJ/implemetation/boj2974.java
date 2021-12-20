@@ -34,3 +34,4 @@ public class boj2974 {
         System.out.println(sb.toString());
     }
 }
+w
