@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
+import java.util.stream.IntStream;
 
 public class boj1158 {
     public static void main(String[] args) throws IOException {
@@ -18,9 +19,11 @@ public class boj1158 {
 
         Queue<Integer> queue = new LinkedList<>();
 
-        for (int i = 1; i <= N; i++) {
-            queue.add(i);
-        }
+//        for (int i = 1; i <= N; i++) {
+//            queue.add(i);
+//        }
+
+        IntStream.range(1, N + 1).forEach(queue::add);
 
         sb.append('<');
         while (queue.size() != 1) {
