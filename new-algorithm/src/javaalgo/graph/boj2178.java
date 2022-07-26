@@ -39,11 +39,10 @@ public class boj2178 {
 
     static void bfs(int x, int y) {
         queue.add(new int[]{x, y});
+        visited[x][y] = true;
 
         while (!queue.isEmpty()) {
             int[] loc = queue.poll();
-            visited[x][y] = true;
-
 
             for (int i = 0; i < 4; i++) {
                 int nx = loc[0] + dx[i];
