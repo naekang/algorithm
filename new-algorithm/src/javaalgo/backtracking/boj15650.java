@@ -36,12 +36,12 @@ public class boj15650 {
         }
 
         for (int i = 0; i < N; i++) {
-            if (!visited[i]) {
+            if (!visited[i] & (x == 0 || map[x - 1] < i + 1)) {
                 visited[i] = true;
                 map[x] = i + 1;
                 dfs(x + 1);
+                visited[i] = false;
             }
         }
     }
-
 }
