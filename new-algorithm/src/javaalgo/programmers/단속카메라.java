@@ -11,23 +11,16 @@ public class 단속카메라 {
     }
 
     static int solution(int[][] routes) {
-        Arrays.sort(routes, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                if (o1[0] == o2[0]) {
-                    return o1[1] - o2[1];
-                } else {
-                    return o1[0] - o2[0];
-                }
-            }
-        });
-
-        System.out.println(Arrays.deepToString(routes));
+        Arrays.sort(routes, (o1, o2) -> o1[1] - o2[1]);
 
         int cnt = 0;
+        int cam = Integer.MIN_VALUE;
 
-        for (int i = 0; i < routes.length - 1; i++) {
-            if (routes[i][1] < routes[i + 1][0]) cnt++;
+        for (int[] route : routes) {
+            if (cam < route[0]) {
+                cam = route[1];
+                cnt++;
+            }
         }
 
         return cnt;
