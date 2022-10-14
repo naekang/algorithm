@@ -3,3 +3,8 @@ new-algorithm.iml
 out
 src/javaalgo/assignment
 src/javaalgo/kakao
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
