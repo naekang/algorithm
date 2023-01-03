@@ -18,7 +18,7 @@ public class boj1929 {
         check[0] = true;
         check[1] = true;
 
-        for (int i = 2; i <= N; i++) {
+        for (int i = 2; i <= Math.sqrt(N + 1); i++) {
             for (int j = i * i; j <= N; j += i) {
                 check[j] = true;
             }
